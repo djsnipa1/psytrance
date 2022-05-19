@@ -1,0 +1,39 @@
+tasks:
+  - before: ./install.sh
+    init: npm install
+# command: npm run serve-gitpod
+ports:
+  # - port: 3000
+  # onOpen: open-preview
+  - port: 8888
+    onOpen: ignore
+
+image:
+  file: .gitpod.dockerfile
+
+vscode:
+  extensions:
+    - gulajavaministudio.mayukaithemevsc
+    - eamodio.gitlens
+    - naumovs.color-highlight
+    - bierner.color-info
+    - anseki.vscode-color
+    - EditorConfig.EditorConfig
+    - dbaeumer.vscode-eslint
+    - evgeniypeshkov.syntax-highlighter
+    - asvetliakov.vscode-neovim
+    - ionutvmi.path-autocomplete
+    - bmalehorn.vscode-fish
+    - formulahendry.auto-close-tag
+    - matt-rudge.auto-open-preview-panel
+    - HookyQR.beautify
+    - pranaygp.vscode-css-peek
+    - codezombiech.gitignore
+    - akosyakov.gitpod-monitor
+    - ecmel.vscode-html-css
+    - eg2.vscode-npm-script
+    - esbenp.prettier-vscode
+    - assisrMatheus.sidebar-markdown-notes
+    - jock.svg
+    - WakaTime.vscode-wakatime
+    - Gruntfuggly.triggertaskonsave

@@ -1,0 +1,44 @@
+{
+  "name": "psytrance-new-releases",
+  "version": "1.0.0",
+  "description": "scrape everynoise.com for psytrance new releaes and make a spotify playlist",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/test.js",
+    "login": "node src/login.js",
+    "serve-gitpod": "browser-sync --watch --server  --no-ui --listen 0.0.0.0",
+    "serve": "browser-sync -f *.html -f *.js -f *.css",
+    "icon": "node icon_cleaner src/img",
+    "htmlmini": "html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --conservative-collapse --decode-entities --minify-css --minify-js --minify-urls --no-include-auto-generated-tags --prevent-attributes-escaping --process-conditional-comments --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --sort-attributes --sort-class-name --trim-custom-fragments --use-short-doctype --input-dir src/html/ --output-dir src/dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djsnipa1/psytrance-new-releases"
+  },
+  "author": "Chad Boyce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djsnipa1/psytrance-new-releases/issues"
+  },
+  "homepage": "https://github.com/djsnipa1/psytrance-new-releases#readme",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.7",
+    "open": "^8.4.0",
+    "passport": "^0.5.2",
+    "passport-spotify": "^2.0.0",
+    "puppeteer": "^13.5.1",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^5.4.5",
+    "browse-url": "^1.1.2",
+    "browser-sync": "^2.27.9",
+    "eslint": "^8.12.0",
+    "html-minifier": "^4.0.0",
+    "icon_cleaner": "^0.1.1",
+    "opener": "^1.5.2"
+  }
+}

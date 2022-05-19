@@ -17,6 +17,7 @@
     lf
     xplr
     fish
+    gh
     http-prompt
     less
     bat
